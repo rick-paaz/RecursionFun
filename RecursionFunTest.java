@@ -46,6 +46,19 @@ public class RecursionFunTest {
     assertFalse(rf.isPalindrome("aBba"));
     assertFalse(rf.isPalindrome("123"));
   }
+  
+   @Test
+  public void testIntwithcommas() {
+    assertEquals("9", rf.intWithCommas(9));
+    assertEquals("123", rf.intWithCommas(123));
+    assertEquals("1,234", rf.intWithCommas(1234));
+    assertEquals("2,147,483,647", rf.intWithCommas(Integer.MAX_VALUE));
+    assertEquals("1,007", rf.intWithCommas(1007));
+    assertEquals("1,027", rf.intWithCommas(1027));
+    assertEquals("1,000", rf.intWithCommas(1000));
+    assertEquals("1,023,004,567", rf.intWithCommas(1023004567));
+  }
+
 
   @Test
   public void testUnderscore() {
